@@ -1,62 +1,62 @@
-#include <stdlib.h>
+#include <stdlib.h>                                                                                                                                      
 
-#include <time.h>
+#include <time.h>                                                                                                                                        
 
-#include <stdio.h>
+#include <stdio.h>                                                                                                                                       
 
-/**
+                                                                                                                                                         
 
-* main - print if the number is postive, zero, or negative
+/**                                                                                                                                                      
 
-*
+* main - print if the number is positive, zero, or negative                                                                                              
 
-* Description: using the main function
+*                                                                                                                                                        
 
-* this program prints "Programming is positive, zero, or negative
+* Description: using the main function                                                                                                                   
 
-* Return: 0
+* this program prints "Programming is positive, zero, negative                                                                                           
 
-*/
+* Return: 0                                                                                                                                              
 
-int main(void)
+*/                                                                                                                                                       
 
-{
+int main(void)                                                                                                                                           
 
-int n;
+{                                                                                                                                                        
 
-int l;
+int n;                                                                                                                                                   
 
+                                                                                                                                                         
 
+srand(time(0));                                                                                                                                          
 
-srand(time(0));
+n = rand() - RAND_MAX /2;                                                                                                                                
 
-n = rand() - RAND_MAX / 2;
+ /* your code goes there */                                                                                                                              
 
-l = n % 10;
+if (n > 0)                                                                                                                                               
 
-if (l > 5)
+{                                                                                                                                                        
 
-{
+        printf("%i is positive\n", n);                                                                                                                   
 
-	printf("Last digit of %d is %d and is greater than 5\n", n, l);
+}                                                                                                                                                        
 
+else if (n == 0)                                                                                                                                         
+
+{                                                                                                                                                        
+
+        printf("%i is zero\n", n);                                                                                                                       
+
+}                                                                                                                                                        
+
+else if (n < 0)                                                                                                                                          
+
+{                                                                                                                                                        
+
+        printf("%i is negative\n", n);                                                                                                                   
+
+}                                                                                                                                                        
+
+return (0);  
 }
-
-else if (l == 0)
-
-{
-
-	printf("Last digit of %d is %d and is 0\n", n, l);
-
-}
-
-else
-
-{
-
-	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
-
-}
-
-return (0);
-
