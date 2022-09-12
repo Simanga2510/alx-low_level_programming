@@ -2,11 +2,11 @@
 
 /**
 
-* main - Entry point
+ * main - entry point
 
-*
+ *
 
-* Return: alway returns 0
+ * Return: alway returns 0
 
 */
 
@@ -17,6 +17,7 @@ int main(void)
 	int i;
 
 	int j;
+
 
 
 	for (i = 0; i <= 99; i++)
@@ -38,6 +39,7 @@ int main(void)
 			putchar(j % 10 + '0');
 
 
+
 			if (!(i == 98 && j == 99))
 
 			{
@@ -57,4 +59,3 @@ int main(void)
 	return (0);
 
 }
-
