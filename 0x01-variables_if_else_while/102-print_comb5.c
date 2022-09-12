@@ -1,21 +1,30 @@
 #include <stdio.h>
 
-/** main - Entry point
+/**
+
+* main - Entry point
+
 *
+
 * Return: alway returns 0
+
 */
 
 int main(void)
+
 {
+
 	int i;
 
 	int j;
 
 
 	for (i = 0; i <= 99; i++)
+
 	{
 
 		for (j = i + 1; j <= 99; j++)
+
 		{
 
 			putchar(i / 10 + '0');
@@ -37,7 +46,6 @@ int main(void)
 
 				putchar(' ');
 
-
 			}
 
 		}
@@ -47,4 +55,6 @@ int main(void)
 	putchar('\n');
 
 	return (0);
+
 }
+
