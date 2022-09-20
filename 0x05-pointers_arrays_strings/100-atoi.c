@@ -14,7 +14,8 @@ int _atoi(char *s)
 
 	unsigned int num = 0;
 
-	do { 
+
+	do {
 
 		if (*s == '-')
 
