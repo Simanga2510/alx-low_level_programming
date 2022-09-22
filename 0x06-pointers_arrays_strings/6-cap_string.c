@@ -6,20 +6,18 @@
 *
 * Return: address of s
 */
-
-char *cap_string(char *s)aa
+char *cap_string(char *s)
 {
 
 	int i = 0, j;
 
 	char a[] = " \t\n,;.!?\"(){}";
 
-	while (*(s + i))
 
+	while (*(s + i))
 	{
 
 		if (*(s + i) >= 'a' && *(s + i) <= 'z')
-
 		{
 
 			if (i == 0)
@@ -27,11 +25,9 @@ char *cap_string(char *s)aa
 				*(s + i) -= 'a' - 'A';
 
 			else
-
 			{
 
 				for (j = 0; j <= 12; j++)
-
 				{
 
 					if (a[j] == *(s + i - 1))
